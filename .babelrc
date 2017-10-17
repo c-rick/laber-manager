@@ -1,0 +1,9 @@
+{
+  "presets": [
+    ["env", { "modules": false }],
+    ["latest", {
+      "es2015": { "modules": false }
+    }],
+    "vue-app"
+  ]
+}
