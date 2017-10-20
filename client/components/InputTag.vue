@@ -84,10 +84,9 @@
     -webkit-appearance: textfield;
   }
   .vue-input-tag-wrapper .input-tag {
-    background-color: #ddd;
-    border: 1px solid #999;
+    background-color: #90d7ec;
     border-radius: 5px;
-    color: #999;
+    color: #fff;
     display: inline-block;
     font-size: 13px;
     font-weight: 400;
@@ -99,7 +98,7 @@
   .vue-input-tag-wrapper .input-tag .remove {
     cursor: pointer;
     font-weight: bold;
-    color: #999;
+    color: #eee;
   }
   .vue-input-tag-wrapper .input-tag .remove:hover {
     text-decoration: none;

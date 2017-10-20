@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div class="childLabel">
     <span class="childSpan">{{label}}</span>
     <div class="childItem" v-if="isObject">
       <el-form-item v-for="childitem in Object.keys(newModel)" :key="childitem" >
@@ -35,33 +35,49 @@ export default {
 </script>
 <style scoped>
 .label-input{
-  display: inline-block;
   border: none;
   padding: 10px;
-  width: 100px;
   text-align: center;
   background: #d5c59f;
   font-size: 14px;
-  vertical-align: top;
   color: #fff;
+  flex-grow:1;
+}
+.childLabel{
+  flex-grow:1;
+  display:flex;
 }
 .childSpan{
-  vertical-align: top;
   display: inline-block;
-  width: 120px;
+  width: 150px;
   text-align: center;
   background: #999d9c;
   color: #eee;
 }
 .childItem{
   display: inline-block;
-  width: 75%;
+  flex-grow: 1;
   vertical-align: top;
 }
 .childItem .childItem{
-  width: 60%;
+  flex-grow: 1;
+}
+.childItem .childSpan{
+  background: #afb4db;
+}
+.childItem .childItem .childSpan {
+  background: #7bbfea;
 }
 .childItem .el-form-item{
-  margin-bottom: 3px;
+  position: relative;
+}
+.childItem .el-form-item:not(:last-child):after{
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
 } 
 </style>

@@ -61,8 +61,13 @@ export default {
 <style scoped>
 .LabelDetial form {
   background: #fff;
-  border-radius: 10px;
   position: relative;
   margin: 0 auto;
+  max-height: 350px;
+  overflow: scroll;
+}
+.label-tree{
+  display: flex;
+  justify-content: space-between;
 }
 </style>
